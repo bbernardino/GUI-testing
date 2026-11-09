@@ -1,6 +1,6 @@
 
-const assert = require('node:assert/strict');
-const { Builder, By } = require('selenium-webdriver');
+import assert from 'node:assert/strict';
+import { Builder, By } from 'selenium-webdriver';
 
 async function main() {
     let driver;
@@ -24,6 +24,7 @@ async function main() {
     } catch (error) {
         console.error('FAIL:', error);
         process.exitCode = 1;
+
     } finally {
         if (driver) {
             await driver.quit();
