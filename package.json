@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "playwright": "^1.65.0",
+    "selenium-webdriver": "^4.52.0"
+  }
+}
